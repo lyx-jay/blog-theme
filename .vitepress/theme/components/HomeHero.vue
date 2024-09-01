@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <img :src="theme.avator" width="135" height="135" class="avator" />
+    <img :src="theme.avator" class="avator" />
   </div>
 </template>
 <script lang="ts" setup>
@@ -15,8 +15,10 @@ const { theme } = useData();
   height: 300px;
 }
 .avator {
-  border-radius: 50%;
-  border: 5px solid var(--vp-avator-border);
+  width: 135px;
+  height: 135px;
+  /* border-radius: 50%; */
+  /* border: 5px solid var(--vp-avator-border); */
 }
 
 @keyframes avator-transform {
