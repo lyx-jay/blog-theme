@@ -6,8 +6,8 @@ import mathjax3 from "markdown-it-mathjax3";
 async function config() {
   return {
     lang: "en-US",
-    title: "Clark Cui",
-    description: "Home of Clark Cui",
+    title: "Lyx",
+    description: "Home of Lyx",
     head: [
       [
         "link",
@@ -21,7 +21,7 @@ async function config() {
         "meta",
         {
           name: "author",
-          content: "Clark Cui",
+          content: "Lyx",
         },
       ],
       [
@@ -35,7 +35,7 @@ async function config() {
         "meta",
         {
           property: "og:description",
-          content: "Home of Clark Cui",
+          content: "Home of Lyx",
         },
       ],
     ],
@@ -66,13 +66,13 @@ async function config() {
           text: "📃Archives",
           link: "/archives",
         },
-        {
-          text: "🔥RSS",
-          link: "https://clark-cui.top/feed.xml",
-        },
+        // {
+        //   text: "🔥RSS",
+        //   link: "https://clark-cui.top/feed.xml",
+        // },
       ],
       socialLinks: [
-        { icon: "github", link: "https://github.com/clark-cui" },
+        { icon: "github", link: "https://github.com/lyx-jay" },
         { icon: "twitter", link: "https://twitter.com/qingshuihe1" },
         {
           icon: {
