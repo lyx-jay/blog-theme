@@ -59,6 +59,10 @@ async function config() {
           link: "/",
         },
         {
+          text: '🔖 Projects',
+          link: '/projects'
+        },
+        {
           text: "🔖 Tags",
           link: "/tags",
         },
