@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import MarkdownImage from '../assets/markdown.png';
 
 interface IProject {
   title: string;
@@ -13,13 +14,7 @@ const projects = [
     title: 'Markdown Assistant',
     description: 'vscode 插件, 提升你的markdown写作体验',
     link: 'https://marketplace.visualstudio.com/items?itemName=lyx.markdown-assistant',
-    icon: '/images/project1.png'
-  },
-  {
-    title: '项目二',
-    description: '这是项目二的描述内容，可以简单介绍项目的功能和特点',
-    link: 'https://example.com/project2',
-    icon: '/images/project2.png'
+    icon: MarkdownImage
   },
 ];
 
@@ -32,9 +27,7 @@ const clickCard = (project: IProject) => {
   <div class="projects-container">
     <div class="projects-grid" >
       <div v-for="(project, index) in projects" :key="index" class="project-card" @click="clickCard(project)">
-        <div class="project-icon">
-          <img :src="project.icon" alt="icon">
-        </div>
+        <img class="project-icon" :src="project.icon" alt="icon">
         <div class="project-content">
           <h3 class="project-title">{{ project.title }}</h3>
           <p class="project-description">{{ project.description }}</p>
@@ -95,7 +88,6 @@ const clickCard = (project: IProject) => {
   align-items: center;
   justify-content: center;
   background-color: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-gutter);
 }
 
 .project-icon img {
