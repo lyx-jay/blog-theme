@@ -87,7 +87,7 @@ const clickCard = (project: IProject) => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--vp-c-bg-soft);
+  /* background-color: var(--vp-c-bg-soft); */
 }
 
 .project-icon img {
@@ -202,10 +202,6 @@ const clickCard = (project: IProject) => {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dark .project-icon {
-  border-color: var(--vp-c-divider-light);
-  background-color: var(--vp-c-bg-soft);
-}
 
 .dark .project-card:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
